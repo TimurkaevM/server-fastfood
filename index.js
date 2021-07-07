@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // Подключение роутов controllers
-app.use('/food', require('./routes'));
+app.use('/food', require('./src/routes'));
 
 // app.get('/food', (req, res) => {
 //   res.send("Hello world");
