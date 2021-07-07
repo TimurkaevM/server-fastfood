@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 
 const app = express();
-const port = config.get('PORT');
+const port = process.env.PORT || config.get('PORT');
 
 // Парсинг
 app.use(express.json());
