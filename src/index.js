@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const config = require('config');
-const morgan = require('morgan');
 const cors = require('cors');
 
 const app = express();
@@ -10,9 +9,6 @@ const port = process.env.PORT || config.get('PORT');
 // Парсинг
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-// Подключение morgan
-app.use(morgan('combined'));
 
 // Подключение cors
 app.use(cors());

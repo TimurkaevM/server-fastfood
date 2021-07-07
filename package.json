@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon src",
-    "start": "node src",
+    "start": "nodemon src",
+    "server": "node src",
     "prettify": "prettier --write ./src"
   },
   "author": "",
