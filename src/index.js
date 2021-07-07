@@ -20,6 +20,10 @@ app.use(cors());
 // Подключение роутов controllers
 app.use('/food', require('./routes'));
 
+app.get('/food', (req, res) => {
+  res.send("Hello world");
+})
+
 (async function () {
   try {
     // подключение БД
