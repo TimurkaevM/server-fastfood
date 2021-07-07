@@ -1,0 +1,4 @@
+{
+  "PORT": 5000,
+  "dbUrl" : "mongodb+srv://maga:timurkaev@food.uitd2.mongodb.net/food?retryWrites=true&w=majority"
+}
